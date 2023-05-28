@@ -84,8 +84,7 @@ const age = (e) =>  {
     let birthDay = new Date(ageDiff) //new Date() sets the birthday using the ageDiff which is in milliseconds
     let ageYear = birthDay.getUTCFullYear() - 1970 //this gets the year -1970 because jan 1st 1970 is the date when time started for unix computers
     let ageMonth = birthDay.getUTCMonth() // this gets the month
-    let ageDate = birthDay.getUTCDate() - 1 //this gets the day
-    console.log(birthDay); 
+    let ageDate = birthDay.getUTCDate() - 1 //this gets the day 
     dayOutput.innerHTML = ageDate
     monthOutput.innerHTML = ageMonth
     yearOutput.innerHTML = ageYear
