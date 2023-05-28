@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: local('Poppins'),
+     url("./assets/fonts/Poppins-Bold.ttf") format('truetype'),
+     url("./assets/fonts/Poppins-BoldItalic.ttf") format('truetype'),
+     url("./assets/fonts/Poppins-ExtraBold.ttf") format('truetype'),
+     url("./assets/fonts/Poppins-ExtraBoldItalic.ttf") format('truetype'),
+     url("./assets/fonts/Poppins-Italic.ttf") format('truetype'),
+     url("./assets/fonts/Poppins-Regular.ttf") format('truetype')
+}
+
+body {
+   background-color: hsl(0, 0%, 94%);
+   font-family: 'Poppins', san-serif;
+}
+
+.container {
+    width: 375px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 20px 20px 80px 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;  
+}
+
+label {
+   margin: 10px;
+   font-size: 12px;
+   color: hsl(0, 1%, 44%);
+}
+
+
+
+input {
+    width: 90px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+.invalid {
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+.error {
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    font-size: 8px;
+    margin-left: 5px;
+}
+
+.submit {
+    margin: 50px 0;
+}
+
+button {
+    position: absolute;
+    left: 160px;
+    top: 116px; 
+    border-radius: 50%;
+    border: 1px;
+    padding: 5px;
+    background-color: hsl(259, 100%, 65%);
+    width: 60px;
+    height: 60px;
+}
+
+.output {
+    font-size: 44px;
+    padding: 20px 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.output span {
+    color: hsl(259, 100%, 65%);
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media only screen and (min-width: 1220px) {
+    .container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .inputs {
+        width: 375px;
+    }
+
+    input {
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    button {
+        left: 380px;
+        top: 128px; 
+    }
+}

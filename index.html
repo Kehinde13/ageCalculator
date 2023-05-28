@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <div class="inputs">
+          <div>
+          <label for="date" id="dateLabel">DATE</label>
+          <input 
+           type="number" 
+           name="date" 
+           id="date" 
+           placeholder="DD"
+           >
+           <p id="dateError" class="error"></p>
+        </div>
+
+        <div>
+          <label for="date" id="monthLabel">MONTH</label>
+          <input 
+           type="number" 
+           name="month" 
+           id="month" 
+           placeholder="MM"
+           >
+           <p id="monthError" class="error"></p>
+        </div>
+
+        <div class="year">
+          <label for="date" id="yearLabel">YEAR</label>
+          <input 
+           type="number" 
+           name="year" 
+           id="year" 
+           placeholder="YYYY"
+           >
+           <p id="yearError" class="error"></p>
+        </div>
+      </div>
+   
+      <div class="submit">
+          <hr>
+        <button id="submit">
+          <img src="./assets/images/icon-arrow.svg" alt="arrow" style="width: 30px;">
+        </button>
+      </div>
+      
+    </form>
+
+    
+
+    <section class="output">
+      <p>
+      <span id="birthYear">--</span>  years
+      </p>
+      <p>
+      <span id="birthMonth">--</span>  months
+      </p>
+      <p>
+      <span id="birthDay">--</span>  days
+      </p>  
+    </section>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Kehinde Balogun</a>.
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
