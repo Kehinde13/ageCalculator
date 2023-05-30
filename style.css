@@ -40,8 +40,6 @@ label {
    color: hsl(0, 1%, 44%);
 }
 
-
-
 input {
     width: 90px;
     margin: 10px;
@@ -50,6 +48,10 @@ input {
     cursor: pointer;
     border-radius: 5px;
     border: 1px solid hsl(0, 0%, 86%);
+}
+
+input:hover {
+    border: 1px solid hsl(259, 100%, 65%);
 }
 
 .invalid {
@@ -78,6 +80,10 @@ button {
     width: 60px;
     height: 60px;
     cursor: pointer;
+}
+
+button:hover {
+    background: #000000;
 }
 
 .output {
