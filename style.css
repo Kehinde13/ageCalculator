@@ -1,6 +1,4 @@
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -16,14 +14,16 @@
 }
 
 body {
-   background-color: hsl(0, 0%, 94%);
+   background: hsl(0, 0%, 94%);
    font-family: 'Poppins', san-serif;
+   margin: 0px;
+   padding: 0px;
 }
 
 .container {
-    width: 375px;
+    max-width: 375px;
     margin: 50px auto;
-    background-color: white;
+    background: white;
     border-radius: 20px 20px 80px 20px;
     padding: 20px;
     position: relative;
@@ -70,11 +70,11 @@ input {
 button {
     position: absolute;
     left: 160px;
-    top: 116px; 
+    top: 130px; 
     border-radius: 50%;
     border: 1px;
     padding: 5px;
-    background-color: hsl(259, 100%, 65%);
+    background: hsl(259, 100%, 65%);
     width: 60px;
     height: 60px;
     cursor: pointer;
@@ -82,7 +82,7 @@ button {
 
 .output {
     font-size: 44px;
-    padding: 20px 5px;
+    padding: 10px 5px;
     font-weight: bold;
     font-style: italic;
 }
@@ -92,7 +92,7 @@ button {
 }
 
 .attribution { 
-    font-size: 11px;
+    font-size: 12px;
     text-align: center; 
 }
 
@@ -103,8 +103,8 @@ button {
 
 @media only screen and (min-width: 1220px) {
     .container {
-        width: 500px;
-        height: 500px;
+        max-width: 500px;
+        height: 600px;
     }
 
     .inputs {
@@ -118,6 +118,6 @@ button {
 
     button {
         left: 380px;
-        top: 128px; 
+        top: 132px; 
     }
 }
