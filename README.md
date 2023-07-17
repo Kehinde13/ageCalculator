@@ -34,7 +34,8 @@ Screenshot
 
 ## Links
 Solution URL: [Github Repo](https://github.com/Kehinde13/ageCalculator)
-Live Site URL:[Age Calculator](https://kehinde13.github.io/ageCalculator/)
+
+Live Site URL: [Age Calculator](https://kehinde13.github.io/ageCalculator/)
 
 ## My process
 
